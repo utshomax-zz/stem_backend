@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "questions",
+  "info": {
+    "name": "Questions",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Question": {
+      "type": "richtext",
+      "required": true
+    },
+    "OptionA": {
+      "type": "string",
+      "required": true
+    },
+    "OptionB": {
+      "type": "string",
+      "required": true
+    },
+    "OptionC": {
+      "type": "string",
+      "required": true
+    },
+    "OptionD": {
+      "type": "string",
+      "required": true
+    },
+    "Answer": {
+      "type": "enumeration",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "required": true
+    },
+    "Image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

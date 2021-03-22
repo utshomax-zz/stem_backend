@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "results",
+  "info": {
+    "name": "Result",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Mark": {
+      "type": "integer"
+    },
+    "Result": {
+      "type": "json"
+    },
+    "uid": {
+      "type": "integer",
+      "required": true
+    },
+    "FullName": {
+      "type": "string",
+      "required": true
+    },
+    "Institution": {
+      "type": "string"
+    },
+    "Membership": {
+      "type": "string"
+    },
+    "Category": {
+      "type": "string"
+    },
+    "Phone": {
+      "type": "integer"
+    }
+  }
+}
